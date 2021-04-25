@@ -1,0 +1,155 @@
+/* Modal */
+
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.modal_content {
+    border-radius: 15px;
+  position: fixed;
+  z-index: 1005;
+  background-color: white;
+  width: 60vw;
+  height: 80vh;
+  left: 20vw;
+  top: 10vh;
+}
+
+.modal_content_header {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 1rem;
+}
+
+.exit_modal {
+  align-self: center;
+ font-size: 30px;
+  color: white;
+  background: rgb(113, 213, 161);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+.exit_modal:hover{
+     background: rgb(34, 56, 67);
+     transition: all 0.2s ease;
+}
+
+/* modal form */
+
+.form_nota {
+  padding: 10px;
+}
+
+.form_nota_title {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.form_nota_title input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid silver;
+}
+
+.form_nota_title input:focus {
+  outline: none;
+  border-bottom-color: rgb(113, 213, 161);
+  transition: all 0.3s ease;
+}
+.form_nota_title input:focus ~ label,
+.form_nota_title input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+}
+
+.form_nota_title label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.form_nota_description {
+  margin-top: 30px;
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.form_nota_description input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid silver;
+}
+
+.form_nota_description input:focus {
+  outline: none;
+  border-bottom-color: rgb(113, 213, 161);
+  transition: all 0.3s ease;
+}
+.form_nota_description input:focus ~ label,
+.form_nota_description input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+}
+
+.form_nota_description label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+
+.form_nota_botton{
+    text-align: center;
+}
+
+.button{
+    color: white;
+    margin-top: 20px;
+    height: 30px;
+    width: 40%;
+    background: rgb(113, 213, 161);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover{
+    height: 35px;
+    width: 43%;
+    background: rgb(113, 213, 161);
+}
+
+
+.form_nota_color {
+    margin-top: 20px;
+    
+}
+
+.form_nota_color label{
+    color: gray;
+    
+}
+
+.form_nota_color input{
+    margin-left: 10px;
+    
+}

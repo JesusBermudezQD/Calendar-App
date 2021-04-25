@@ -1,0 +1,34 @@
+.day{
+    border: 1px solid rgb(187, 184, 184);
+    height: 90px;
+    background: rgb(208, 226, 226);
+    color: black;
+    cursor: pointer;
+}
+
+.color{
+    background: rgb(113, 213, 161);
+    color: white;
+}
+
+.day__header p{
+    margin-top: 0px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+
+
+
+/* Media */
+@media (max-width: 600px) {
+    .day {
+      height: auto;
+      width: auto;
+    }
+
+    .day__header p{
+        font-size: 7px;
+    }
+    
+  }
